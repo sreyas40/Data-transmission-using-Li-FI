@@ -27,10 +27,10 @@ dataLength = length(encodedBase64)
 
 %inputString = 'All laws in force in the territory of India immediately before the commencement of this Constitution, in so far as they are inconsistent with the provisions of this Part, shall, to the extent of such inconsistency, be void.';
 inputString= encodedBase64
-splitSize = 10;
+splitSize = 98;
 splitStrings = splitString(inputString, splitSize);
 
-delay = .3; % Define the delay between each transmission
+delay = 3; % Define the delay between each transmission
 
 pause(2)
 % Send each chunk with a delay
