@@ -7,8 +7,6 @@ configureTerminator(s, "LF"); % Set terminator to newline character
 
 % Initialize an empty string to store received data
 receivedData = "";
-% Define the end-of-line character
-endOfLine = char(10); % Assuming newline character
 
 % Main loop to continuously read data from Arduino
 while true
