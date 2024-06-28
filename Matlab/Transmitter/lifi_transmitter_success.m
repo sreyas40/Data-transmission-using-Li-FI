@@ -7,7 +7,7 @@ s = serialport("COM5", 115200);
 message="All laws in force in the territory of India immediately before the commencement of this Constitution, in so far as they are inconsistent with the provisions of this Part, shall, to the extent of such inconsistency, be void.";
 
 % Specify the path to your JPEG image
-imagePath = 'SampleJPGImage_50kbmb.jpg';
+imagePath = 'Save.png';
 % Open the file in binary read mode
 fileID = fopen(imagePath, 'rb');
 % Read the file as bytes
@@ -56,5 +56,6 @@ function splitStrings = splitString(inputString, splitSize)
         startIndex = (i - 1) * splitSize + 1;
         endIndex = min(i * splitSize, len);
         splitStrings{i} = inputString(startIndex:endIndex);
+        disp(splitStrings{i})
     end
 end
