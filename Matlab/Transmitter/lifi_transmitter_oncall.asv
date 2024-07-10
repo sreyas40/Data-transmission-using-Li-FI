@@ -3,9 +3,10 @@ clear all;
 close all;
 
 s = serialport("COM5", 115200);
-message = "Adi Shankara Institute of Engineering and Technology";
+message = "hi da";
 
-imagePath = 'Save.png';
+imagePath = ['sample-3s.mp3' ...
+    ''];
 fileID = fopen(imagePath, 'rb');
 imageBytes = fread(fileID, '*uint8');
 fclose(fileID);
