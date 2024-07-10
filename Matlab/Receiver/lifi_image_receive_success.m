@@ -2,7 +2,7 @@ clc;
 clear all;
 
 % Create serial object for Arduino
-s = serialport("COM9", 115200);
+s = serialport("COM5", 115200);
 configureTerminator(s, "LF"); % Set terminator to newline character
 
 % Initialize an empty string to store received data

@@ -1,6 +1,6 @@
 #define LED_PIN A1
 #define BUTTON_PIN A0
-#define PERIOD 3
+#define PERIOD 2
 
 char receivedString[250];
 boolean newData = false;

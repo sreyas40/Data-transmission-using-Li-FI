@@ -22,8 +22,8 @@ void loop()
     unsigned long end_time = micros();
     print_byte(received_byte);
     unsigned long time_taken = end_time - start_time;
-    Serial.print(" Time taken: ");
-    Serial.println(time_taken);
+    //Serial.print(" Time taken: ");
+    //Serial.println(time_taken);
   }
   previous_state = current_state;
 }
